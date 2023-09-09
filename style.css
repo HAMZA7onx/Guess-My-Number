@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Alex brush", sans-serif;
+    position: relative;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #e64980, #da77f2);
+    position: relative;
+    position: absolute;
+    top: 0;
+  }
+  
+  .guess {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 1rem;
+  }
+  
+  .heading {
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .between {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  
+  .guess-style {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-color: #a61e4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0% 30%
+    );
+  }
+  
+  .smb {
+    font-size: 8rem;
+    color: #f06595;
+  }
+  
+  .score-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+  }
+  
+  .lpoint {
+    justify-self: end;
+  }
+  
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #a61e4d;
+    transition: all 0.5s;
+  }
+  
+  .icon:hover {
+    color: #fff;
+  }
+  
+  .setting {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .play,
+  .again,
+  .pause {
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .play:hover,
+  .again:hover,
+  .pause:hover {
+    background-color: #a61e4d;
+  }
+  
+  .input {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+  }
+  
+  .input::placeholder {
+    font-family: "Alex brush";
+    text-transform: lowercase;
+    font-size: 1.6rem;
+  }
+  
+  .guess *:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px #a61e4d;
+  }
+  
+  /* CLASS LIST SETTING */
+  
+  .win {
+    background-image: linear-gradient(to bottom right, #2f9e44, #82c91e99);
+  }
+  
+  .lose {
+    background-image: linear-gradient(to bottom right, #e03131, #ff8787);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .index {
+    z-index: 1;
+  }
+  /* Windows: */
+  
+  .windows {
+    width: 100%;
+    height: 100vh;
+    background-color: #a61e4e99;
+    position: relative;
+    position: absolute;
+    top: 0;
+  }
+  
+  .close {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    color: #fff;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .close:hover {
+    color: #a61e4d;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  

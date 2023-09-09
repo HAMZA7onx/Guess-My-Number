@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@400;500;600;700&family=Roboto&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>guess my number</title>
+  </head>
+  <body>
+    <!-- Windows -->
+    <section class="windows">
+      <ion-icon name="close" class="close"></ion-icon>
+    </section>
+    <!-- Container -->
+    <section class="container">
+      <div class="score-container">
+        <div>
+          <span>&mdash; &nbsp; score&nbsp; &mdash;</span>
+          <span class="score">20</span>
+        </div>
+        <div class="lpoint">
+          <span>&mdash; &nbsp; heigh score&nbsp; &mdash;</span>
+          <span class="heigh-score">0</span>
+        </div>
+      </div>
+      <div class="guess">
+        <div>
+          <p class="heading">
+            Guess my number <span class="between">(Between 0 & 20)</span>
+          </p>
+          <p class="guessing">Guessing</p>
+        </div>
+        <span class="guess-style"> <p class="smb">?</p> </span>
+        <input type="number" class="input" placeholder="ENTER A NUMBER" />
+        <div class="setting">
+          <button class="play">
+            <ion-icon name="square" class="icon"></ion-icon>
+          </button>
+          <button class="pause">
+            <ion-icon name="pause" class="icon"></ion-icon>
+          </button>
+          <button class="again">
+            <ion-icon name="sync" class="icon"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- # -->
+    <!-- # -->
+    <!-- # -->
+    <!-- # -->
+    <!-- # -->
+    <!-- # -->
+    <script src="script.js"></script>
+  </body>
+</html>
